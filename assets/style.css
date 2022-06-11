@@ -161,6 +161,7 @@ body::-webkit-scrollbar-track {
   display: block;
   text-decoration: none;
   font-size: 20px;
+  color: #FE6702;
 }
 .nav__mobile_tablet.open{
   display: block;
@@ -269,13 +270,15 @@ body::-webkit-scrollbar-track {
   margin: 0 10px;
 }
 .form2-contactIcon{
+  display: flex;
+  flex-wrap: wrap;
   margin:20px 0;
 
 }
 .form2-contactIcon i{
   color: #333;
   font-size: 24px;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .form2-contactIcon i:hover{
   opacity: 0.8;
@@ -309,15 +312,18 @@ body::-webkit-scrollbar-track {
 }
 
 /* My resume */
-#resume{
+#resume,#testimonials,#portfolio{
   margin-top: 40px;
   position: relative;
 }
-.resume__title{
+.resume__title,.testimonials__title,.portfolio__title {
   font-size: 32px;
   margin-bottom: 30px;
 }
-.resume__title::before{
+.resume__title::before,
+.testimonials__title::before,
+.portfolio__title::before
+{
   content: "";
   position: absolute;
   top:-20px;
@@ -508,6 +514,65 @@ body::-webkit-scrollbar-track {
   margin: 0 10px;
   font-weight: 600;
 }
+/* Testimonials */
+.testimonials__content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.testimonials__item{
+  margin-top: 10px;
+  width: 47%;
+}
+.testimonials__item img{
+  
+  width: 100%;
+}
+/* Portfolio */
+
+/* Style the buttons */
+.btn__portfolio {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn__portfolio:hover {
+  background-color: #FE6702;
+  color: #FFF;
+  opacity: 0.5;
+}
+
+.btn__portfolio.active {
+  background-color: #FE6702;
+  color: #FFF;
+}
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row__portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+}
+.show{
+  display: block;
+}
+.portfolio__item{
+  padding: 10px 0;
+  padding-right: 10px;
+}
+
+.portfolio__item img{
+  width: 100%;
+}
+
 /* Footer */
 #footer {
   height: 400px;

@@ -32,3 +32,4 @@ menuIcon.addEventListener('click',function(){
         navMoblie.classList.remove('open')
      }
  }
+

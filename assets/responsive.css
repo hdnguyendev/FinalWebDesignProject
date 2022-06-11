@@ -47,7 +47,9 @@
       .about__form{
         padding: 30px 10px;
     }
-    
+    .row__portfolio {
+        width: 50%;
+    }
 }
 
 /* Mobile */
@@ -80,4 +82,24 @@
         padding: 20px 10px;
     }
     .resume__row {width: 100%;}
+    .form2-contactIcon {
+        justify-content: center;
+    }
+    .form2-contactIcon i{
+        font-size: 32px ;
+        margin-top: 12px;
+        
+    }
+    .testimonials__item{
+        width: 100%;
+      }
+      .row__portfolio {
+        width: 100%;
+    }
+    
+}
+@media (max-width:19.9375em){
+    * {
+        display: none !important;
+    }
 }
