@@ -1,0 +1,83 @@
+/* PC */
+@media (min-width: 77.2em) {
+    #header {
+        justify-content: space-evenly;
+    }
+
+
+    .nav__mobile_tablet.open {
+        display: none !important;
+        animation: FadetoRight2 ease 0.5s;
+    }
+   
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width:77.125em) {
+    #header {
+        justify-content: space-between;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav-icon {
+        display: flex;
+
+    }
+
+    #content {
+        margin: 0px 15px;
+
+    }
+
+    .header__logo {
+        order: -1;
+    }
+ 
+    .about__form{
+        width: 100%;
+    }
+
+    #content #about{
+        justify-content: center; 
+        flex-wrap: wrap;   
+      }
+      .about__form{
+        padding: 30px 10px;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .header__nav-icon {
+        display: flex;
+
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo {
+        flex-basis: 100%;
+    }
+
+    #content {
+        margin: 0px 15px;
+
+    }
+    .about__form{
+        width: 100%;
+    }   
+    #content #about{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    .about__form{
+        padding: 20px 10px;
+    }
+    .resume__row {width: 100%;}
+}

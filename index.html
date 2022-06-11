@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+
+    <title>A2NCoder</title>
+
+</head>
+
+
+<body>
+
+    <script>
+        // Loadpage used JQuery
+        $(window).on("load", function () {
+            jQuery("#status").fadeOut();
+            jQuery("#loader").fadeOut();
+        });
+
+
+    </script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Loadpage -->
+    <div id='status'></div>
+    <div id='loader'></div>
+    <!-- Main -->
+    <div id="main">
+        <div id="header">
+
+            <ul class="header__nav header__nav-left">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#">Testimonials</a></li>
+
+            </ul>
+            <div class="header__logo">
+                <a href="#"><img src="./assets/img/logo2_w88.png" alt=""></a>
+            </div>
+            <ul class="header__nav header__nav-right">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div id="mobile-menu" class="header__nav-icon"><i class="fa-solid fa-bars icon-menu"></i></div>
+            <ul class="nav__mobile_tablet">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="slider">
+                <img src="./assets/img/slider.png" alt="">
+            </div>
+            <div id="about">
+                <div class="about__form">
+                    <div class="about__form-title">Who am I ?</div>
+                    <div class="form1">
+                        <div class="form1-name">
+                            Hi, my name is Ho Dang Nguyen 
+                        </div>
+                        <div class="form1-desc">
+I'm a first year student at Vietname - Korea University of Information and Communication Technology, majoring in software engineering.
+                        </div>
+                        <a href="http://www.facebook.com/dangnguyen2k3">Visit my Facebook</a>
+                    </div>
+                    
+                </div>
+                <div class="about__form">
+                    <div class="about__form-title">Personal Info</div>
+                    <div class="form2">
+                        <ul class="form2-contact">
+                            <li><div class="key">Birthdate</div><div class="value">September 21, 2003</div></li>
+                            <li><div class="key">Mobile</div><div class="value">+84 382 876 922</div></li>
+                            <li><div class="key">Email</div><div class="value">nguyenhd.21it@vku.udn.vn</div></li>
+                            <li><div class="key">Address</div><div class="value">Quang Tri manh dat anh hung!</div></li>
+                        </ul>
+                        <div class="form2-contactIcon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="about__form">
+                    <div class="about__form-title">My Expertise</div>
+                    <div class="form3">
+                        <div class="form3-expertise">
+                            <div class="expertise-icon"><i class="fa-solid fa-display"></i></div>
+                            <div class="expertise-content">
+
+                                <div class="expertise-title">Web Design</div>
+                                <div class="expertise-desc"><hr></div>
+                            </div>
+                        </div>
+                        <div class="form3-expertise">
+                            <div class="expertise-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="expertise-content">
+                                
+                                <div class="expertise-title">Web Development</div>
+                                <div class="expertise-desc"><hr></div>
+                            </div>
+                        </div>
+                        <div class="form3-expertise">
+                            <div class="expertise-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div class="expertise-content">
+                                
+                                <div class="expertise-title">Mobile Design</div>
+                                <div class="expertise-desc"><hr></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                
+                </div>            
+            </div>
+            <div id="resume">
+                <div class="resume__title">
+                    My Resume
+                </div>
+                <div class="resume__content">
+                    <div class="resume__row">
+                        <div class="form__resume">
+                            <div class="form__resume-head">
+                                <div class="head-title">Expertise</div>
+                                <div class="head-icon"><i class="fa-solid fa-briefcase"></i></div>
+                            </div>
+                            <div class="form__resume-content">
+                                <div class="education-expertise-content">
+                                    <div class="education-expertise-item">
+                                        <div class="item-title">Gio An Secondary School,</div>
+                                        <div class="item-subdesc">2014 - 2018</div>
+                                        <div class="item-desc">I won the title of good student in the first 3 years and in the last year, I was so greedy that I dropped in rank.</div>
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__resume">
+                            <div class="form__resume-head">
+                                <div class="head-title">Interests</div>
+                                <div class="head-icon"><i class="fa-solid fa-heart"></i></div>
+                            </div>
+                            <div class="form__resume-content">
+                                <div class="interestMain">
+                                    <div class="subInterest">
+                                        <div class="subInterest-icon"><i class="fa-solid fa-music"></i></div>
+                                        <div class="subInterest-title">Music</div>
+                                    </div>
+                                    <div class="subInterest">
+                                        <div class="subInterest-icon"><i class="fa-solid fa-gamepad"></i></div>
+                                        <div class="subInterest-title">Gaming</div>
+                                    </div>
+                                    <div class="subInterest">
+                                        <div class="subInterest-icon"><i class="fa-solid fa-code"></i></div>
+                                        <div class="subInterest-title">Code</div>
+                                    </div>
+                                    <div class="subInterest">
+                                        <div class="subInterest-icon"><i class="fa-solid fa-bed"></i></div>
+                                        <div class="subInterest-title">Sleep</div>
+                                    </div>
+                                    <div class="subInterest">
+                                        <div class="subInterest-icon"><i class="fa-solid fa-person-snowboarding"></i></div>
+                                        <div class="subInterest-title">Sport</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div class="resume__row">
+                        <div class="form__resume">
+                            <div class="form__resume-head">
+                                <div class="head-title">Education</div>
+                                <div class="head-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                            </div>
+                            <div class="form__resume-content">
+                                <div class="education-expertise-content">
+                                    <div class="education-expertise-item">
+                                        <div class="item-title">Gio An Secondary School,</div>
+                                        <div class="item-subdesc">2014 - 2018</div>
+                                        <div class="item-desc">I won the title of good student in the first 3 years and in the last year, I was so greedy that I dropped in rank.</div>
+                                    </div>
+                                    <div class="education-expertise-item">
+                                        <div class="item-title">Con Tien High School</div>
+                                        <div class="item-subdesc">2018 - 2021</div>
+                                        <div class="item-desc">Being a good student in 10th and 12th grade, 11 studied very poorly</div>
+                                    </div>
+                                    <div class="education-expertise-item">
+                                        <div class="item-title">Vietnam - Korea University </div>
+                                        <div class="item-subdesc">2021 - UNDEFINED</div>
+                                        <div class="item-desc">I'm under a lot of pressure, don't ask me anymore huh :(</div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__resume">
+                            <div class="form__resume-head">
+                                <div class="head-title">Assets</div>
+                                <div class="head-icon"><i class="fa-solid fa-circle-user"></i></div>
+                            </div>
+                            <div class="form__resume-content">
+                                <div class="assests-content">
+                                    <div class="assests-list">
+                                        <div class="assests_list-item">Responsible</div>
+                                        <div class="assests_list-item">Diligence</div>
+                                        <div class="assests_list-item">Labour</div>
+                                    </div>
+                                    <div class="assests-list">
+                                        <div class="assests_list-item">Rigor</div>
+                                        <div class="assests_list-item">Creative</div>
+                                        <div class="assests_list-item">Funny</div>
+                                    </div>
+                                    <div class="assests-list">
+                                        <div class="assests_list-item">Great Communicator </div>
+                                        <div class="assests_list-item">Flexible</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                      
+                      
+                    </div>
+                    <div class="resume__row">
+                        <div class="form__resume">
+                            <div class="form__resume-head">
+                                <div class="head-title">Skills</div>
+                                <div class="head-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            </div>
+                            <div class="form__resume-content">
+                                <div class="skills_language-content">
+                                    <div class="skill_language-item">
+                                        <div class="skill_language__item-title">HTML/CSS</div>
+                                        <div class="skill_language_item-level" style="--width: 10%"></div>
+                                    </div>
+                                    <div class="skill_language-item">
+                                        <div class="skill_language__item-title">Javascript</div>
+                                        <div class="skill_language_item-level"style="--width: 5%"></div>
+                                    </div>
+                                    <div class="skill_language-item">
+                                        <div class="skill_language__item-title">Java</div>
+                                        <div class="skill_language_item-level"style="--width: 30%"></div>
+                                    </div>
+                                    <div class="skill_language-item">
+                                        <div class="skill_language__item-title">C++</div>
+                                        <div class="skill_language_item-level"style="--width: 50%"></div>
+                                    </div>
+                                    <div class="skill_language-item">
+                                        <div class="skill_language__item-title">Python</div>
+                                        <div class="skill_language_item-level"style="--width: 20% "></div>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="form__resume">
+                            <div class="form__resume-head">
+                                <div class="head-title">Languages</div>
+                                <div class="head-icon"><i class="fa-solid fa-language"></i></div>
+                            </div>
+                            <div class="form__resume-content">
+                                <div class="skills_language-content">
+                                    <div class="skill_language-item">
+                                        <div class="skill_language__item-title">English</div>
+                                        <div class="skill_language_item-level" style="--width: 30%"></div>
+                                    </div>
+                                    <div class="skill_language-item">
+                                        <div class="skill_language__item-title">Vietnamese</div>
+                                        <div class="skill_language_item-level"style="--width: 80%"></div>
+                                    </div>
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
