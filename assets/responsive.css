@@ -70,6 +70,13 @@
     .contact__form {
         padding: 20px;
     }
+    .portfolio__item {
+        padding-right: 10px;
+    }
+    .blog__item{
+        width: 49%;
+        
+    }
 }
 
 /* Mobile */
@@ -143,6 +150,9 @@
     .contact__form {
         margin-top: 10px;
         padding: 30px;
+    }
+    textarea {
+        max-height: 100px;
     }
 }
 
