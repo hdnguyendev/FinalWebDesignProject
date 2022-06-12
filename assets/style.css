@@ -569,7 +569,6 @@ body::-webkit-scrollbar-track {
 }
 .portfolio__item{
   padding: 10px 0;
-  padding-right: 10px;
   
 }
 
@@ -584,7 +583,6 @@ body::-webkit-scrollbar-track {
 }
 .blog__item{
   margin: 10px 0;
-  margin-right: 10px;
   width: 30%;
   border: 1px solid rgb(0 0 0 / 10%)  ;
   background-color: rgb(0 0 0 / 5%);
@@ -639,9 +637,8 @@ body::-webkit-scrollbar-track {
 }
 .contact__form {
 
-  flex: 1;
+  flex: 0.9;
   padding: 50px;
-  margin-left: 20px;
   background-color: rgb(0 0 0 / 10%);
   border: 1px solid rgb(0 0 0 / 10%);
 }
@@ -663,10 +660,11 @@ body::-webkit-scrollbar-track {
 }
 .contact__form-content {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   flex-flow: column wrap;
 }
 .contact__form-content input, textarea{
+  width: 100%;
   margin-bottom: 10px;
   padding: 15px;
   border: none;
@@ -689,7 +687,6 @@ body::-webkit-scrollbar-track {
 /* Footer */
 #footer {
   background-color: #333;
-  height: 400px;
   display: flex;
   justify-content: space-between;
   color: #fff;

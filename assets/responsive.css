@@ -63,8 +63,9 @@
     }
 
     .contact__form {
-        margin-left: 0;
         margin-top: 20px;
+        width: 100%;
+        flex:1;
     }
     .contact__form {
         padding: 20px;
@@ -136,10 +137,11 @@
     }
 
     .contact__form {
-        margin-left: 0;
-        margin-top: 20px;
+        width: 100%;
+        flex: 1;
     }
     .contact__form {
+        margin-top: 10px;
         padding: 10px;
     }
 }
