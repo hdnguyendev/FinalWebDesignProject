@@ -154,6 +154,14 @@
     textarea {
         max-height: 100px;
     }
+    .footer__left {
+        width: 100%;
+    }
+    .footer__right {
+        display: none;
+    }
+    #footer {
+        flex-wrap: wrap;}
 }
 
 @media (max-width:19.9375em) {

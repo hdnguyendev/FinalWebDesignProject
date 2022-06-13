@@ -337,14 +337,18 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 .resume__row {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 33%;
+  height: auto;
  
   }
 .form__resume{
+  flex:1;
   padding: 30px 20px 90px 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 10px 0;
@@ -569,11 +573,11 @@ body::-webkit-scrollbar-track {
 }
 .portfolio__item{
   padding: 10px 0;
-  
 }
 
 .portfolio__item img{
   width: 100%;
+
 }
 /* Blog */
 .blog__content{
@@ -694,16 +698,16 @@ input:focus, textarea:focus{
 }
 /* Footer */
 #footer {
-  background-color: #333;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: #fff;
+  justify-content: space-between;
 }
-#footer > img {
+.footer__left {
+}
+.footer__right {
+}
+#footer img {
   width: 100%;
 }
-
 /* Zoom image - copy  */
 .div_modal{
   position: relative;
@@ -782,6 +786,7 @@ input:focus, textarea:focus{
       width: 100%;
   }
 }
+
 
 /* Btn go to top */
 #myBtn {
