@@ -1,3 +1,10 @@
+
+        // Loadpage used JQuery
+        $(window).on("load", function () {
+            jQuery("#status").fadeOut();
+            jQuery("#loader").fadeOut();
+        });
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
@@ -49,8 +56,6 @@ for (let i=0;i <img.length ;i++){
 
   }
 }
-
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -58,3 +63,52 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 }
+
+// slider 
+// const slides = document.querySelectorAll('.slider');
+// var index=0;
+
+// setInterval(() => {
+//   index++;
+
+//   if (index > slides.length-1) {
+//     index = 0;
+//   }
+//   runSlide();
+// }, 5000);
+
+// function runSlide(){
+//   slides.forEach(function(slide){
+//     slide.classList.remove('active');
+//   })
+
+//   slides[index].classList.add('active');
+// }
+
+
+// Show more 
+const btnShow = document.querySelector('.btnShowmore');
+const blog_list = document.querySelectorAll('.blog__item');
+btnShow.addEventListener('click',showMoreBlog);
+
+function showMoreBlog(){
+
+  blog_list.forEach(function(item){
+      item.classList.toggle('show');
+     
+     
+  })
+  if (btnShow.innerHTML == "Hidden") btnShow.innerHTML = "Show More" ; else {
+    btnShow.innerHTML = "Hidden";
+  }
+}
+
+
+// slider - slick
+$(document).ready(function(){
+  $('#slider').slick({
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed: 2000
+  });
+})

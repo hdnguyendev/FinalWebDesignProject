@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel='shortcut icon' href='./assets/img/logoheader.png' />
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/responsive.css">
@@ -21,15 +21,6 @@
 
 <body>
 
-    <script>
-        // Loadpage used JQuery
-        $(window).on("load", function () {
-            jQuery("#status").fadeOut();
-            jQuery("#loader").fadeOut();
-        });
-
-
-    </script>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     <!-- Loadpage -->
     <div id='status'></div>
@@ -63,10 +54,13 @@
             </ul>
         </div>
         <div id="content">
-            <div class="slider">
+            <div id="slider">
                 <img src="./assets/img/slider.png" alt="">
+                <img src="./assets/img/slider2.png" alt="">
+                <img src="./assets/img/slider3.png" alt="">
             </div>
-            <div id="about">
+            <div class="container">
+
                 <div class="about__form">
                     <div class="about__form-title">Who am I ?</div>
                     <div class="form1">
@@ -74,13 +68,20 @@
                             Hi, my name is Ho Dang Nguyen
                         </div>
                         <div class="form1-desc">
-                            I'm a first year student at Vietnam-Korea University of Information and Communication
-                            Technology, majoring in software engineering.
+                            I'm freshman in VKU - VietNam Korea University of Information and Commiunication Technology.
+                            <br> My major is Software Engineering.
                         </div>
-                        <a href="http://www.facebook.com/dangnguyen2k3">Visit my Facebook</a>
+                        <a class="btn_fb" href="http://www.facebook.com/dangnguyen2k3" target="_blank"><span
+                                class="btn_fb-label">Click me!</span> </a>
                     </div>
+                </div>
+                <div class="container__image">
+                    <div class="container__info container__author">Hi, I'm <a class="link"
+                            href="https://facebook.com/dangnguyen2k3" target="_blank">Nguyện</a></div>
 
                 </div>
+            </div>
+            <div id="about">
                 <div class="about__form">
                     <div class="about__form-title">Personal Info</div>
                     <div class="form2">
@@ -99,7 +100,7 @@
                             </li>
                             <li>
                                 <div class="key">Address</div>
-                                <div class="value">An Nha - Gio An - Gio Linh - Quang Tri</div>
+                                <div class="value">Gio Linh, Quảng Trị</div>
                             </li>
                         </ul>
                         <div class="form2-contactIcon">
@@ -108,8 +109,6 @@
                             <a href="#"><i class="fa-brands fa-youtube"></i></a>
                             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="#"><i class="fa-brands fa-github"></i></a>
-                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
 
                         </div>
                     </div>
@@ -169,17 +168,19 @@
                                     <div class="education-expertise-item">
                                         <div class="item-title">FPT Software company</div>
                                         <div class="item-subdesc">UNDEFINED</div>
-                                        <div class="item-desc">It was just my dream.</div>
+                                        <div class="item-desc">If I can afford it, I will apply, it seems like my dream
+                                        </div>
                                     </div>
                                     <div class="education-expertise-item">
                                         <div class="item-title">Google Technology company</div>
                                         <div class="item-subdesc">UNDEFINED</div>
-                                        <div class="item-desc">It was just my dream.</div>
+                                        <div class="item-desc">Looks like I can't even get to Google's headquarters
+                                        </div>
                                     </div>
                                     <div class="education-expertise-item">
                                         <div class="item-title">Nasa Government agency</div>
                                         <div class="item-subdesc">UNDEFINED</div>
-                                        <div class="item-desc">It was just my dream.</div>
+                                        <div class="item-desc">That's impossible hehe ⊙﹏⊙∥</div>
                                     </div>
                                 </div>
                             </div>
@@ -228,14 +229,14 @@
                                     <div class="education-expertise-item">
                                         <div class="item-title">Gio An Secondary School</div>
                                         <div class="item-subdesc">2014 - 2018</div>
-                                        <div class="item-desc">I won the title of good student in the first 3 years and
-                                            in the last year, I was so greedy that I dropped in rank.</div>
+                                        <div class="item-desc">Looks like I did very well until my last year of middle
+                                            school 〒▽〒</div>
                                     </div>
                                     <div class="education-expertise-item">
                                         <div class="item-title">Con Tien High School</div>
                                         <div class="item-subdesc">2018 - 2021</div>
                                         <div class="item-desc">Being a good student in 10th and 12th grade, 11 studied
-                                            very poorly</div>
+                                            very stupid</div>
                                     </div>
                                     <div class="education-expertise-item">
                                         <div class="item-title">Vietnam - Korea University </div>
@@ -286,23 +287,23 @@
                                 <div class="skills_language-content">
                                     <div class="skill_language-item">
                                         <div class="skill_language__item-title">HTML/CSS</div>
-                                        <div class="skill_language_item-level" style="--width: 10%"></div>
+                                        <div class="skill_language_item-level" style="--width: 35%"></div>
                                     </div>
                                     <div class="skill_language-item">
                                         <div class="skill_language__item-title">Javascript</div>
-                                        <div class="skill_language_item-level" style="--width: 5%"></div>
+                                        <div class="skill_language_item-level" style="--width: 10%"></div>
                                     </div>
                                     <div class="skill_language-item">
                                         <div class="skill_language__item-title">Java</div>
-                                        <div class="skill_language_item-level" style="--width: 30%"></div>
+                                        <div class="skill_language_item-level" style="--width: 40%"></div>
                                     </div>
                                     <div class="skill_language-item">
                                         <div class="skill_language__item-title">C++</div>
                                         <div class="skill_language_item-level" style="--width: 50%"></div>
                                     </div>
                                     <div class="skill_language-item">
-                                        <div class="skill_language__item-title">Python</div>
-                                        <div class="skill_language_item-level" style="--width: 20% "></div>
+                                        <div class="skill_language__item-title">MS Office</div>
+                                        <div class="skill_language_item-level" style="--width: 70% "></div>
                                     </div>
 
                                 </div>
@@ -338,12 +339,34 @@
                     My Testimonials
                 </div>
                 <div class="testimonials__content">
-                    
+
                     <div class="testimonials__item">
                         <img src="./assets/img/CodeLearn_certification.png" alt="">
+                        <figcaption>
+                            <a href="#">
+                                <div>
+                                    <h2>All this modern technology</h2>
+                                </div>
+                                <div>
+                                    <p>Just makes people try to do everything at once.</p>
+                                </div>
+
+                            </a>
+                        </figcaption>
                     </div>
                     <div class="testimonials__item">
                         <img src="./assets/img/CodeLearn_certification _java.png" alt="">
+                        <figcaption>
+                            <a href="#">
+                                <div>
+                                    <h2>All this modern technology</h2>
+                                </div>
+                                <div>
+                                    <p>Just makes people try to do everything at once.</p>
+                                </div>
+
+                            </a>
+                        </figcaption>
                     </div>
                 </div>
             </div>
@@ -357,7 +380,7 @@
                 <div id="myModal" class="modal">
 
                     <!-- The Close Button -->
-                
+
 
                     <!-- Modal Content (The Image) -->
                     <div class="div_modal">
@@ -367,66 +390,62 @@
 
                     <!-- Modal Caption (Image Text) -->
                 </div>
-                
+
                 <div class="portfolio__list">
                     <div class="row__portfolio">
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt1.jpg" alt=""> 
-                
+                            <img class="myImg" src="./assets/img/heh/1.jpg" alt="">
+
                         </div>
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt2.jpg" alt=""> 
-                
+                            <img class="myImg" src="./assets/img/heh/2.jpg" alt="">
+
                         </div>
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt9.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/3.jpg" alt="">
                         </div>
-                 
+
                     </div>
                     <div class="row__portfolio">
 
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt4.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/4.jpg" alt="">
                         </div>
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt5.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/5.jpg" alt="">
                         </div>
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt6.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/6.jpg" alt="">
                         </div>
-                        <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt7.jpg" alt="">
-                        </div>
-                       
+
+
                     </div>
                     <div class="row__portfolio">
 
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt12.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/7.jpg" alt="">
 
                         </div>
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt11.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/8.jpg" alt="">
                         </div>
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt2.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/9.jpg" alt="">
                         </div>
-                        <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt13.jpg" alt="">
-                        </div>
+
                     </div>
                     <div class="row__portfolio">
 
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt10.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/10.jpg" alt="">
                         </div>
 
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt8.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/11.jpg" alt="">
 
                         </div>
                         <div class="portfolio__item">
-                            <img class="myImg" src="./assets/img/portfolio/avt14.jpg" alt="">
+                            <img class="myImg" src="./assets/img/heh/12.jpg" alt="">
 
                         </div>
                     </div>
@@ -436,55 +455,165 @@
             <div id="blog">
                 <div class="blog__title">Blog</div>
                 <div class="blog__content">
-                    <div class="blog__item">
+                    <div class="blog__item autoshow">
                         <div class="blog__item-banner">
                             <img src="./assets/img/blog/frontenddev.jpg" alt="">
+                            <figcaption>
+                                <div>
+                                    <h2>How to - become front-end developer</h2>
+                                </div>
+                                <div>
+                                    <p>Click to read-more</p>
+                                </div>
+                                <a href="./blog.html"></a>
+                            </figcaption>
                         </div>
-                        <div class="blog__item-title">Become Front-end Developer <a href="#"
-                                class="readmore">readmore</a></div>
+
+                        <a href="./blog.html">
+                            <div class="blog__item-title">Become Front-end Developer</div>
+                        </a>
                         <div class="blog__item-author">
-                            <i class="fa-solid fa-user"></i> Admin - 12/06/2022
+                            <i class="fa-solid fa-user"></i> W3 - 12/06/2022
                         </div>
                         <div class="blog__item-desc">
                             The secret to becoming a good front-end developer
 
                         </div>
 
+
                     </div>
-                    <div class="blog__item">
+                    <div class="blog__item autoshow">
                         <div class="blog__item-banner">
-                            <img src="./assets/img/blog/backenddev.png" alt="">
+                            <img src="./assets/img/blog/nang-luong-lap-trinh.jpg" alt="">
+                            <figcaption>
+                                <div>
+                                    <h2>Giữ năng lượng khi học và lập trình</h2>
+                                </div>
+                                <div>
+                                    <p>Click to read-more</p>
+                                </div>
+                                <a href="./blog.html"></a>
+                            </figcaption>
                         </div>
-                        <div class="blog__item-title">Become Back-end Developer <a href="#"
-                                class="readmore">readmore</a></div>
+                        <div class="blog__item-title">Giữ năng lượng khi học và lập trình</div>
                         <div class="blog__item-author">
-                            <i class="fa-solid fa-user"></i> Admin - 12/06/2022
+                            <i class="fa-solid fa-user"></i> Bùi Văn Nguyện - 21/06/2022
                         </div>
                         <div class="blog__item-desc">
-                            Becoming a good backend developer is so simple.
+                            Bản thân mình cực kỳ tôn trọng những lập trình viên vẫn giữ được phong độ code khi ở giai đoạn cuối của dự án. Đường dài mới biết ngựa hay, một dự án phải trải qua cả những lúc khó khăn, không hề "có cảm hứng" chút nào
 
                         </div>
 
                     </div>
-                    <div class="blog__item">
+                    <div class="blog__item autoshow">
                         <div class="blog__item-banner">
-                            <img src="./assets/img/blog/fullstackdev.png" alt="">
+                            <img src="./assets/img/blog/sinh-vien-it.png" alt="">
+                            <figcaption>
+                                <div>
+                                    <h2>Viết cho sinh viên IT</h2>
+                                </div>
+                                <div>
+                                    <p>Click to read-more</p>
+                                </div>
+                                <a href="./blog.html"></a>
+                            </figcaption>
                         </div>
-                        <div class="blog__item-title">Become Fullstack Developer <a href="#"
-                                class="readmore">readmore</a></div>
+                        <div class="blog__item-title">Viết cho sinh viên IT</div>
                         <div class="blog__item-author">
-                            <i class="fa-solid fa-user"></i> Admin - 12/06/2022
+                            <i class="fa-solid fa-user"></i> Bùi Văn Nguyện - 21/06/2022
                         </div>
                         <div class="blog__item-desc">
-                            How much does a Fullstack programmer earn a month?
+                            Rồi ngày mai cuộc sống sẽ cuốn các bạn đi, code của các bạn sẽ không còn là những dòng code đầy đam mê như trước nữa, mà code của bạn phải làm ra tiền. Tôi nói thật đấy, bạn sẽ phải trả tiền phòng, tiền điện nước, internet, code của bạn trước khi làm thỏa mãn đam mê, thì trước hết nó phải đáp ứng được tầng thấp nhất của tháp nhu cầu Maslow cái đã.
 
                         </div>
 
                     </div>
+                    <div class="blog__item ">
+                        <div class="blog__item-banner">
+                            <img src="./assets/img/blog/frontenddev.jpg" alt="">
+                            <figcaption>
+                                <div>
+                                    <h2>How to - become front-end developer</h2>
+                                </div>
+                                <div>
+                                    <p>Click to read-more</p>
+                                </div>
+                                <a href="./blog.html"></a>
+                            </figcaption>
+                        </div>
+
+                        <a href="./blog.html">
+                            <div class="blog__item-title">Become Front-end Developer</div>
+                        </a>
+                        <div class="blog__item-author">
+                            <i class="fa-solid fa-user"></i> W3 - 12/06/2022
+                        </div>
+                        <div class="blog__item-desc">
+                            The secret to becoming a good front-end developer
+
+                        </div>
+
+
+                    </div>
+                    <div class="blog__item ">
+                        <div class="blog__item-banner">
+                            <img src="./assets/img/blog/nang-luong-lap-trinh.jpg" alt="">
+                            <figcaption>
+                                <div>
+                                    <h2>Giữ năng lượng khi học và lập trình</h2>
+                                </div>
+                                <div>
+                                    <p>Click to read-more</p>
+                                </div>
+                                <a href="./blog.html"></a>
+                            </figcaption>
+                        </div>
+                        <div class="blog__item-title">Giữ năng lượng khi học và lập trình</div>
+                        <div class="blog__item-author">
+                            <i class="fa-solid fa-user"></i> Bùi Văn Nguyện - 21/06/2022
+                        </div>
+                        <div class="blog__item-desc">
+                            Bản thân mình cực kỳ tôn trọng những lập trình viên vẫn giữ được phong độ code khi ở giai đoạn cuối của dự án. Đường dài mới biết ngựa hay, một dự án phải trải qua cả những lúc khó khăn, không hề "có cảm hứng" chút nào
+
+                        </div>
+
+                    </div>
+                    <div class="blog__item ">
+                        <div class="blog__item-banner">
+                            <img src="./assets/img/blog/sinh-vien-it.png" alt="">
+                            <figcaption>
+                                <div>
+                                    <h2>Viết cho sinh viên IT</h2>
+                                </div>
+                                <div>
+                                    <p>Click to read-more</p>
+                                </div>
+                                <a href="./blog.html"></a>
+                            </figcaption>
+                        </div>
+                        <div class="blog__item-title">Viết cho sinh viên IT</div>
+                        <div class="blog__item-author">
+                            <i class="fa-solid fa-user"></i> Bùi Văn Nguyện - 21/06/2022
+                        </div>
+                        <div class="blog__item-desc">
+                            Rồi ngày mai cuộc sống sẽ cuốn các bạn đi, code của các bạn sẽ không còn là những dòng code đầy đam mê như trước nữa, mà code của bạn phải làm ra tiền. Tôi nói thật đấy, bạn sẽ phải trả tiền phòng, tiền điện nước, internet, code của bạn trước khi làm thỏa mãn đam mê, thì trước hết nó phải đáp ứng được tầng thấp nhất của tháp nhu cầu Maslow cái đã.
+
+                        </div>
+
+                    </div>
+                   
+
+
+                </div>
+                <div id="showmore">
+                    <button class="btnShowmore">Show more</button>
                 </div>
             </div>
             <div id="contact">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1917.8670915480502!2d108.25259337848256!3d15.975252036205948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421088e365cc75%3A0x6648fdda14970b2c!2zNDcwIMSQxrDhu51uZyBUcuG6p24gxJDhuqFpIE5naMSpYSwgSG_DoCBI4bqjaSwgTmfFqSBIw6BuaCBTxqFuLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1655253854804!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1917.8670915480502!2d108.25259337848256!3d15.975252036205948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421088e365cc75%3A0x6648fdda14970b2c!2zNDcwIMSQxrDhu51uZyBUcuG6p24gxJDhuqFpIE5naMSpYSwgSG_DoCBI4bqjaSwgTmfFqSBIw6BuaCBTxqFuLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2sus!4v1655253854804!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="contact__form">
                     <div class="contact__form-title">Contact me</div>
                     <div class="contact__form-content">
@@ -492,11 +621,11 @@
                         <input type="email" placeholder="Email *" required>
                         <textarea placeholder="Message *" name="" id="" cols="45" rows="10" required></textarea>
                     </div>
-                    <button class="btn-submit">Send message</button>
+                    <button type="submit" class="btn-submit">Send message</button>
                 </div>
             </div>
         </div>
-        <div id="footer">
+        <!-- <div id="footer">
             <div class="footer__left">
                 <img src="./assets/img/footerleft.png" alt="">
 
@@ -506,9 +635,13 @@
 
             </div>
 
-        </div>
+        </div> -->
     </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./assets/script.js"></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.js"></script>
 </body>
 
 </html>

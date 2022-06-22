@@ -16,8 +16,19 @@
 @media (min-width: 46.25em) and (max-width:77.125em) {
     #header {
         justify-content: space-between;
+        padding:0 30px;
     }
-
+    .form__resume:nth-child(odd){
+        background-color: #f5f5f5;
+      }
+      .form__resume:nth-child(even){
+        background-color: #f5f3f3;
+      }
+      
+    
+    .nav__mobile_tablet{
+        width: 30vw;
+    }
     .header__nav {
         display: none;
     }
@@ -28,8 +39,7 @@
     }
 
     #content {
-        margin: 0px 15px;
-
+        padding: 0 30px;
     }
 
     .header__logo {
@@ -77,6 +87,16 @@
         width: 49%;
         
     }
+    .resume__content {
+        flex-direction: column;
+    }
+    .resume__row{
+        flex-direction: row;
+        width: 100%;
+        
+    }
+    .form__resume {
+    }
 }
 
 /* Mobile */
@@ -95,8 +115,7 @@
     }
 
     #content {
-        margin: 0px 15px;
-
+        padding: 0 15px;
     }
 
     .about__form {
@@ -161,7 +180,15 @@
         display: none;
     }
     #footer {
-        flex-wrap: wrap;}
+        flex-wrap: wrap;
+    }
+    .form__resume:nth-child(odd){
+        background-color: #f5f5f5;
+      }
+      .form__resume:nth-child(even){
+        background-color: #f5f3f3;
+      }
+      
 }
 
 @media (max-width:19.9375em) {
