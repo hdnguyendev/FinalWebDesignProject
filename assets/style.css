@@ -744,10 +744,6 @@ body {
   width: 100%;
 }
 
-.testimonials__item figcaption {
-  text-align: center;
-}
-
 
 /* Portfolio */
 #portfolio {
@@ -913,6 +909,10 @@ body {
   transform: translate3d(0%, 50%, 0);
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px #333;
 }
 
 .blog__item-banner h2 span {
@@ -929,7 +929,10 @@ body {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-
+.blog__item-banner p span{
+  color: #FE6702;
+ 
+}
 .blog__item-banner a {
   left: 0;
   right: 0;

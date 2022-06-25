@@ -1,95 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --color: #FE6702;
+	--color: #FE6702;
 }
 
+:root {
+	--bg-color-primary: none;
+	--bg-color-secondary: rgba(0,0,0,0.1);
+	--bg-toggle-btn: rgb(255, 255, 255);
+	--box-shadow: rgba(100, 100, 110, 0.2) 0px 8px 28px 0px;
+	--title-color: #1e1e1e;
+	--text-color: rgb(255, 255, 255);
+	--bg-color: linear-gradient(to top, #346992 0%, #537895 100%);
+	--bg-btn:#537895;
+}
+
+[data-theme='dark'] {
+	--bg-color-primary: #333;
+	--bg-color-secondary: #242526;
+	--bg-toggle-btn: #4e4f50;
+	--box-shadow: rgba(25, 25, 25, 0.2) 0px 8px 28px 0px;
+	--title-color: #f1f2f3;
+	--text-color: #fff;
+	--bg-color: linear-gradient(to top, #000 0%, #333 100%);;
+	--bg-btn:#333;
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
 }
 
 body::-webkit-scrollbar {
-  width: 5px;
+	width: 5px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color);
-  border-radius: 100rem;
+	background-color: var(--text-color);
+	border-radius: 100rem;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #ccc;
+	background-color: #ccc;
 }
 
-body {
-	background: linear-gradient(
-		to bottom,
-		#b721ff,
-		#2af598,
-		#fec051,
-		#fee140,
-		#fa709a
-	);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
 
-body:before {
-	content: "";
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	z-index: -1;
-	background: linear-gradient(
-		to right bottom,
-		rgba(255, 255, 255, 0.2),
-		#21d4fd 75%
-	);
-}
-
+body  {
+    /* background-image: linear-gradient(140deg, #fff 0%, #0063ec 50%,#FFF 100%); */
+	background-image: var(--bg-color);
+ }
 #main {
-	background-color: #fff;
-	margin: 80px 10%;
-	padding: 30px 60px;
+	background-color: var(--bg-color-primary);
+	padding: 10px 40px;
+	margin: 40px;
 	border-radius: 20px;
 	box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.2);
 }
 
-.main__content {
-	background-color: #f7f7f7;
+.main__header {
+	position: relative;
+	color: var(--title-color);
+
+}
+.header__title {
+	margin: 20px 0;
+	color: var(--text-color);
+	text-transform: uppercase;
+	font-size: 42px;
+	text-align: center	;
+}
+.breadcrumb {
+	display: inline-block;
 	padding: 20px;
 	border-radius: 10px;
-	color: #6b6b6b;
+	background-color: var(--bg-color-secondary);
+	box-shadow: var(--box-shadow);
+}
+
+.breadcrumb li {
+	list-style: none;
+	display: inline-block;
+}
+
+.breadcrumb li>a {
+
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.breadcrumb li+li:before {
+	padding: 8px;
+	color: var(--text-color);
+	content: "/\00a0";
+}
+
+.breadcrumb li a:hover {
+	color: var(--color);
+}
+
+.main__content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	background-color: var(--bg-color-secondary);
+	box-shadow: var(--box-shadow);
+	padding: 20px;
+	border-radius: 10px;
+	color: var(--text-color);
 	margin: 40px 0;
 }
 
-/* Carousel */
+/* Carousel
 .slick-prev {
 	transform: scale(2) translateX(100%) translateY(-20%);
-
+	z-index: 10;
 }
+
 .slick-next {
 	transform: scale(2) translateX(-100%) translateY(-20%);
 }
-.carousel > div {
+
+.carousel>div {
 	text-align: center;
-}
+} */
 
 
 /* Content */
-.content{
+.content {
 	margin-top: 30px;
+	width: 70%;
+	font-size: 18px;
+	line-height: 1.6;
+
 }
+
+.content>p {
+	margin-bottom: 10px;
+}
+.content> hr {
+	opacity: 0.5;
+	color: var(--text-color);
+	margin: 15px 0;
+}
+.content > img {
+	width: 100%;
+}
+#toggleBtn {
+	width: 80px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: var(--bg-toggle-btn);
+	box-shadow: var(--box-shadow);
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
+.author {
+	margin: 20px 0px;
+	float: right;
+}
+#toggleBtn::before {
+	content: '';
+	position: absolute;
+	left: 2px;
+	bottom: 2px;
+	width: 36px;
+	height: 36px;
+	background-color: var(--bg-btn);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.35s;
+}
+
+#toggleBtn.active::before {
+	transform: translateX(40px);
+}
+
 /* Btn go to top */
 #myBtn {
 	display: none;
@@ -100,14 +194,15 @@ body:before {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #FE6702;
+	background-color: var(--bg-btn);
 	color: white;
 	cursor: pointer;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-  }
-  
-  #myBtn:hover {
+	box-shadow: var(--box-shadow);
+}
+
+#myBtn:hover {
 	background-color: #555;
-  }
+}
