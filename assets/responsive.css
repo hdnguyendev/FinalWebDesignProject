@@ -121,7 +121,8 @@
     .about__form {
         width: 100%;
     }
-
+    .container__image {
+    }
     #content #about {
         flex-wrap: wrap;
         justify-content: center;
