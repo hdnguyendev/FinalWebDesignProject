@@ -491,7 +491,7 @@ body {
 /* My resume */
 #resume,
 #testimonials,
-#portfolio,
+#photo,
 #blog {
   margin-top: 88px;
   position: relative;
@@ -746,7 +746,7 @@ body {
 
 
 /* Portfolio */
-#portfolio {
+#photo {
   margin-top: 88px;
 }
 
@@ -798,8 +798,8 @@ body {
   cursor: pointer;
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .portfolio__item:hover img {
